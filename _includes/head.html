@@ -19,7 +19,17 @@
 <meta name="description" content="Abhijit's Data Science Blog. Blog dedicated to data science topics like Machine Learning, underlying concepts from Math and Statistics, etc." />
 <meta name="DC.Title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 <script type="text/javascript">
-  window.location = "{{site.baseurl}}/ml" + window.location.pathname
+  function contains(a, obj) {
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] === obj) return true;
+    }
+    return false;
+  }
+  var mlBlogLinks = ["/", "/all-posts/", "/projects/", "/mlguide/", "/getting-started-with-machine-learning-in-one-hour/", "/useful-stuff/", "/discuss/", "/getting-started-with-machine-learning-in-one-hour/", "/dimensionality-reduction-and-principal-component-analysis-pca-explained.html", "/dbscan-clustering-in-machine-learning.html", "/kmeans-vs-knn-in-machine-learning.html", "/data-preprocessing-in-machine-learning.html", "/machine-learning-beyond-the-buzz.html", "/installing-tensorflow-gpu-on-windows.html", "/learning-from-my-first-kaggle-competition.html", "/significance-of-interpretable-predictive-models.html", "/pondering-about-artificial-general-intelligence.html", "/intuition-behind-encoded-vector-representation.html", "/applied-vs-theoretical-machine-learning.html", "/introduction-to-ensemble-learning-methods-in-ml.html", "/building-a-data-science-portfolio.html", "/my-first-machine-learning-hackathon.html", "/mathematical-thinking.html", "/mathematics-for-machine-learning.html"]
+  if (contains(mlBlogLinks, window.location.pathname) { 
+    window.location = "{{site.baseurl}}/ml" + window.location.pathname     
+  }
+  // window.location = "{{site.baseurl}}/ml" + window.location.pathname
 </script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=59497dec297abe001240a40d&product=sticky-share-buttons"></script>
