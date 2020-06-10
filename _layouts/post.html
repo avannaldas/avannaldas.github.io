@@ -4,28 +4,10 @@ layout: default
 
 <div class="row">
 	<div class="col-sm-12" style="text-align:justify;">
-		<h3>{{ page.title }}</h3>
+		<h4>{{ page.title }}</h4>
 		<i style="color:gray">{{ page.date | date: "%d-%b-%Y" }}</i>
 		<hr />
 		{{ content }}
 		<br />
    </div>
-</div>
-<div class="row">
-	<div class="col-sm-12">
-	<div id="disqus_thread"></div>
-<script>
-    var disqus_config = function () {
-        this.page.url = window.location;
-        this.page.identifier = document.title;
-    };
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = '//abhijit-annaldas-data-science-blog.disqus.com/embed.js';        
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-	</div>
 </div>
