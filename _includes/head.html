@@ -1,5 +1,6 @@
 <!--Head-->
-{% seo %}
+<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+{% seo title=false %}
 <meta name="keywords" content="Abhijit, Annaldas, Abhijit Annaldas, Learner, Author, Doer, Health, Fitness, Health and Fitness, Productivity, Personal Finance, Finance, Performance, Habits, Behavior" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
